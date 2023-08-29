@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/calculator');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <img src="SpanchBob.gif" id="bob"/>
+    <div id="clock" class ='container'>
+      <span class="hour">00</span><span class="colon">:</span><span class="min">00</span><span class="colon">:</span><span class="sec">00</span>
+    </div>
+    <input type="button" onclick="clockStart()" value="Start" id ="buttonStart">
+    <input type="button" onclick="clockStop()" value="Stop" id ="buttonStop">
+    <input type="button" onclick="clearTimer()" value="Clear" id ="buttonClear">
+    <script src = 'script.js'></script>
+  </body>
+</html>

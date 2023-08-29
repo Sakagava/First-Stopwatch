@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("Clock.jpg");
+}
+
+#bob {
+    margin: 90px 0 0 500px;
+}
+
+.colon {
+    font-family: 'Calculator', sans-serif;
+    font-size: 170px;
+    color: azure;
+}
+
+.hour {
+    margin-top: 500px;
+    font-family: 'Calculator', sans-serif;
+    font-size: 170px;
+    color: azure;
+}
+
+.min {
+    font-family: 'Calculator', sans-serif;
+    font-size: 170px;
+    color: azure;
+}
+
+.sec {
+    font-family: 'Calculator', sans-serif;
+    font-size: 170px;
+    color: azure;
+}
+
+.container {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 55%;
+    left: 44.5%;
+    margin: -125px 0 0 -125px;
+}
+
+#buttonStart {
+    background-color: #a3a3a3;
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: azure;
+    border: none;
+    width: 190px;
+    height: 50px;
+    position: absolute;
+    top: 82.5%;
+    left: 40.5%;
+    margin: -125px 0 0 -125px;
+}
+
+#buttonStop {
+    background-color: #a3a3a3;
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: azure;
+    border: none;
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    top: 82.5%;
+    left: 52%;
+    margin: -125px 0 0 -125px;
+}
+
+#buttonClear {
+    background-color: #a3a3a3;
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: azure;
+    border: none;
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    top: 82.5%;
+    left: 63%;
+    margin: -125px 0 0 -125px;
+}
+
+
+#buttonStart:hover {
+    background-color: #949494;
+    color: white;
+    transition: 0.7s;
+}
+
+#buttonStop:hover {
+    background-color: #949494;
+    color: white;
+    transition: 0.7s;
+}
+
+#buttonClear:hover {
+    background-color: #949494;
+    color: white;
+    transition: 0.7s;
+}
