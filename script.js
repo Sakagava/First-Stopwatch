@@ -7,32 +7,32 @@ function clockStart() {
   let hour = 0;
   if (timer !== null) return;
   timer = setTimeout(function tick() {
-  let currentTime = new Date();
-  let sec = ((currentTime - startTime)/1000).toFixed(0);
+    let currentTime = new Date();
+    let sec = ((currentTime - startTime)/1000).toFixed(0);
 
-  if (sec == 60) {
-    min += 1;
-    sec = 0;
-    startTime = new Date();
-  }
-
-  if (min == 60) {
-    hour +=1;
-    min = 0;
-  }
-
-  let date = [hour, 0, min, 0, sec];
-  let arrOfElements = Array.from(clock.children);
-
-  arrOfElements.map( (item,index) => {
-    if (item.textContent == ':') return item
-    item.innerHTML = date[index]
-    if (item.textContent.length < 2) { 
-      item.innerHTML = '0' + date[index]
+    if (sec == 60) {
+      min += 1;
+      sec = 0;
+      startTime = new Date();
     }
-  })
 
-  timer = setTimeout(tick, 1000)
+    if (min == 60) {
+      hour +=1;
+      min = 0;
+    }
+
+    let date = [hour, 0, min, 0, sec];
+    let arrOfElements = Array.from(clock.children);
+
+    arrOfElements.map( (item,index) => {
+      if (item.textContent == ':') return item
+      item.innerHTML = date[index]
+      if (item.textContent.length < 2) { 
+        item.innerHTML = '0' + date[index]
+      }
+    })
+
+    timer = setTimeout(tick, 1000)
   }, 1000)
   buttonStart.style.backgroundColor = '#949494';
 }
