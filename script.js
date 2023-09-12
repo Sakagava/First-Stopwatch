@@ -5,7 +5,9 @@ function clockStart() {
   let startTime = new Date();
   let min = 0;
   let hour = 0;
+  
   if (timer !== null) return;
+  
   timer = setTimeout(function tick() {
     let currentTime = new Date();
     let sec = ((currentTime - startTime)/1000).toFixed(0);
@@ -34,6 +36,7 @@ function clockStart() {
 
     timer = setTimeout(tick, 1000)
   }, 1000)
+  
   buttonStart.style.backgroundColor = '#949494';
 }
 
